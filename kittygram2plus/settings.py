@@ -34,11 +34,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles', # Необходимо для swagger (по умолчанию включён)
     'rest_framework',
     'corsheaders',
     'djoser',
     'cats.apps.CatsConfig',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -50,8 +51,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.contrib.staticfiles',  # Необходимо для swagger (по умолчанию включён)
-    'drf_yasg',
 ]
 
 ROOT_URLCONF = 'kittygram2plus.urls'
