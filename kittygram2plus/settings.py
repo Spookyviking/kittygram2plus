@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'djoser',
     'cats.apps.CatsConfig',
+    # Обратите внимание: библиотека django-filter, а приложение django_filters
+    'django_filters',
     'drf_yasg',
 ]
 
