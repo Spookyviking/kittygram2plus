@@ -1,6 +1,6 @@
-from rest_framework import throttling
-
 import datetime
+
+from rest_framework import throttling
 
 
 # кастомный тротлинг-класс, который разрешает работу

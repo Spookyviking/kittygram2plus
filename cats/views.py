@@ -2,13 +2,10 @@ from rest_framework import viewsets
 # from rest_framework.throttling import AnonRateThrottle
 from rest_framework.throttling import ScopedRateThrottle
 
-from .throttling import WorkingHoursRateThrottle
-
 from .models import Achievement, Cat, User
-
-from .serializers import AchievementSerializer, CatSerializer, UserSerializer
-
 from .permissions import OwnerOrReadOnly, ReadOnly
+from .serializers import AchievementSerializer, CatSerializer, UserSerializer
+from .throttling import WorkingHoursRateThrottle
 
 
 class CatViewSet(viewsets.ModelViewSet):
